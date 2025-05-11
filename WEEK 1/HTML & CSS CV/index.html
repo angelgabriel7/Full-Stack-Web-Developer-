@@ -1,104 +1,291 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - M Zaky Zulfikar</title>
+    <title>M Zaky Zulfikar | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio for M Zaky Zulfikar, showcasing skills in operations, IT, and software engineering.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cosmic: {
+                            dark: "#0f0e17",
+                            primary: "#fffffe",
+                            secondary: "#a7a9be",
+                            accent: "#ff8906",
+                            highlight: "#e53170",
+                            nebula: "#2e2f3e"
+                        }
+                    },
+                    fontFamily: {
+                        orbitron: ["Orbitron", "sans-serif"],
+                        space: ["Space Mono", "monospace"]
+                    },
+                    backgroundImage: {
+                        'stars': "url('https://picsum.photos/1920/1080?random=1&blur=2&grayscale')",
+                        'planet': "url('https://picsum.photos/800/800?random=2')"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="cv-container">
-        <header class="cv-header">
-            <div class="header-info">
-                <h1>M Zaky Zulfikar</h1>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:zakyzulfikarworld@gmail.com">zakyzulfikarworld@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> 081286710045</p>
-                    <p>
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://bit.ly/4mfNbjC" target="_blank" class="contact-badge linkedin-badge">
-                            LinkedIn
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fab fa-github"></i>
-                        <a href="https://bit.ly/3SvmWI5" target="_blank" class="contact-badge github-badge">
-                            GitHub
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-gamepad"></i>
-                        <a href="https://bit.ly/3F6KpMF" target="_blank" class="contact-badge itch-badge">
-                            itch.io
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fas fa-code"></i>
-                        <a href="https://bit.ly/4dwoLyp" target="_blank" class="contact-badge leetcode-badge">
-                            LeetCode
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fab fa-medium-m"></i>
-                        <a href="https://bit.ly/42RiCZN" target="_blank" class="contact-badge medium-badge">
-                            Medium
-                        </a>
-                    </p>
+<body class="font-space min-h-screen relative">
+    <div id="stars-container" class="fixed inset-0 -z-10"></div>
+
+    <header class="fixed w-full z-50 backdrop-blur-md bg-cosmic-nebula/80">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-orbitron font-bold gradient-text">M ZAKY ZULFIKAR</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">About</a>
+                <a href="#experience" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Experience</a>
+                <a href="#education" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Education</a>
+                <a href="#projects" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Projects</a>
+                <a href="#certifications" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Certifications</a>
+                <a href="#contact" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-cosmic-secondary">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-cosmic-nebula/90">
+            <a href="#about" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">About</a>
+            <a href="#experience" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">Experience</a>
+            <a href="#education" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">Education</a>
+            <a href="#projects" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">Projects</a>
+            <a href="#certifications" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">Certifications</a>
+            <a href="#contact" class="block text-cosmic-secondary hover:text-cosmic-accent transition-colors px-6 py-3">Contact</a>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center pt-24 md:pt-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-orbitron font-bold mb-6">
+                    <span class="text-cosmic-primary">M Zaky</span> <br>
+                    <span class="gradient-text">Zulfikar</span>
+                </h1>
+                <p class="text-cosmic-secondary text-lg mb-4 max-w-xl">
+                    Results-driven professional with a strong background in retail operations and team leadership, now transitioning into software engineering. Passionate about developing innovative technology solutions.
+                </p>
+                <p class="text-cosmic-secondary text-md mb-8 max-w-lg">
+                    Based in Jakarta, Indonesia.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-cosmic-accent hover:bg-cosmic-highlight text-cosmic-dark font-bold py-3 px-6 rounded-full transition-colors">
+                        Contact Me
+                    </a>
+                    <a href="#projects" class="border-2 border-cosmic-accent text-cosmic-accent hover:bg-cosmic-accent/10 font-bold py-3 px-6 rounded-full transition-colors">
+                        View Projects
+                    </a>
                 </div>
             </div>
-            <div class="header-photo">
-                <img src="foto.png" alt="Foto M Zaky Zulfikar">
+            <div class="md:w-1/2 relative">
+                <div class="floating">
+                    <img src="assets/undersea.png" alt="IT Theme background" class="rounded-full w-full max-w-sm md:max-w-md mx-auto border-4 border-cosmic-accent/30">
+                </div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-cosmic-highlight rounded-full opacity-20 blur-xl"></div>
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-cosmic-accent rounded-full opacity-20 blur-xl"></div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Summary</h2>
-            <p>Results-driven professional with a strong background in retail operations, team leadership, and process optimization. Proven success in driving sales growth, improving customer satisfaction, and managing cross-functional teams. Currently transitioning into software engineering, leveraging foundational IT knowledge, programming skills, and a passion for developing innovative technology solutions to solve real-world challenges.</p>
-        </section>
+    <section id="about" class="py-20 bg-cosmic-nebula/50 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="gradient-text">About</span> <span class="text-cosmic-primary">Me</span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="assets/foto.png" alt="M Zaky Zulfikar" class="rounded-lg w-full max-w-xs mx-auto border-2 border-cosmic-accent/50">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">Professional Summary</h3>
+                    <p class="text-cosmic-secondary mb-6">
+                        Results-driven professional with a strong background in retail operations, team leadership, and process optimization. Proven success in driving sales growth, improving customer satisfaction, and managing cross-functional teams. Currently transitioning into software engineering, leveraging foundational IT knowledge, programming skills, and a passion for developing innovative technology solutions to solve real-world challenges.
+                    </p>
+                    <h4 class="text-xl font-orbitron text-cosmic-accent mb-3">Key Skills & Strengths</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
+                            <h5 class="font-orbitron text-cosmic-primary mb-1">Retail Operations</h5>
+                            <p class="text-sm text-cosmic-secondary">Sales Growth, Merchandising, Stock Management, Cost Control</p>
+                        </div>
+                        <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
+                            <h5 class="font-orbitron text-cosmic-primary mb-1">Leadership</h5>
+                            <p class="text-sm text-cosmic-secondary">Team Supervision, Staff Development, Performance Coaching</p>
+                        </div>
+                        <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
+                            <h5 class="font-orbitron text-cosmic-primary mb-1">Customer Relations</h5>
+                            <p class="text-sm text-cosmic-secondary">Conflict Resolution, Customer Satisfaction, Complaint Handling</p>
+                        </div>
+                        <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
+                            <h5 class="font-orbitron text-cosmic-primary mb-1">Technology & IT</h5>
+                            <p class="text-sm text-cosmic-secondary">Retail System Mgt, IT Support, Network Setup, React, HTML, CSS, VS Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Education</h2>
-            <div class="entry">
-                <h3>Universitas Nasional</h3>
-                <p><strong>Master of Business Law (On Leave)</strong></p>
-                <ul>
-                    <li>Currently pursuing a Master's degree in Business Law with a focus on legal frameworks and compliance in business operations. Currently on academic leave to focus on professional development and career growth.</li>
-                </ul>
+    <section id="experience" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="text-cosmic-primary">Professional</span> <span class="gradient-text">Experience</span>
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-1/2 w-1 h-full bg-gradient-to-b from-cosmic-accent to-cosmic-highlight transform -translate-x-1/2 hidden md:block"></div>
+                    
+                    <div class="mb-12 relative md:flex md:items-start">
+                        <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-cosmic-accent border-4 border-cosmic-dark hidden md:block"></div>
+                        <div class="timeline-content md:w-1/2 md:pr-8 md:text-right mb-8 md:mb-0">
+                        </div>
+                        <div class="timeline-content md:w-1/2 md:pl-8">
+                             <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
+                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Assistant Manager (Operations)</h3>
+                                <p class="text-cosmic-highlight font-bold mb-1">IBD (PT. Ibunda Bhakti Usaha)</p>
+                                <p class="text-cosmic-secondary text-sm mb-2">Apr 2023 - Feb 2025</p>
+                                <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1">
+                                    <li>Led retail operations, focusing on store performance and sales growth.</li>
+                                    <li>Managed inventory, costs, and budgeting, optimizing stock levels.</li>
+                                    <li>Developed customer service strategies, achieving a 95% satisfaction rate.</li>
+                                    <li>Collaborated with cross-functional teams to streamline store operations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-12 relative md:flex md:items-start md:flex-row-reverse">
+                        <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-cosmic-accent border-4 border-cosmic-dark hidden md:block"></div>
+                         <div class="timeline-content md:w-1/2 md:pl-8 md:text-left mb-8 md:mb-0">
+                        </div>
+                        <div class="timeline-content md:w-1/2 md:pr-8 md:text-right">
+                            <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
+                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Senior Staff Supply Chain Management (Strategy)</h3>
+                                <p class="text-cosmic-highlight font-bold mb-1">LSI (PT. Lotte Shopping Indonesia)</p>
+                                <p class="text-cosmic-secondary text-sm mb-2">Jul 2020 - Apr 2023</p>
+                                <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1 text-left md:text-right">
+                                    <li>Developed store layouts, increasing sales by 92%.</li>
+                                    <li>Managed staff performance, fostering a high-performance culture.</li>
+                                    <li>Executed promotional campaigns based on market conditions.</li>
+                                    <li>Oversaw visual merchandising and in-store promotions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-12 relative md:flex md:items-start">
+                        <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-cosmic-accent border-4 border-cosmic-dark hidden md:block"></div>
+                        <div class="timeline-content md:w-1/2 md:pr-8 md:text-right mb-8 md:mb-0">
+                        </div>
+                        <div class="timeline-content md:w-1/2 md:pl-8">
+                            <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
+                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Foreign Officer (Operations)</h3>
+                                <p class="text-cosmic-highlight font-bold mb-1">BBCA (PT. Bank Central Asia)</p>
+                                <p class="text-cosmic-secondary text-sm mb-2">Dec 2018 - Nov 2019</p>
+                                <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1">
+                                    <li>Managed foreign client accounts, ensuring service satisfaction.</li>
+                                    <li>Performed data analysis to identify fraud patterns.</li>
+                                    <li>Contributed to customer support procedure improvements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="entry">
-                <h3>Cakrawala University</h3>
-                <p><strong>Bachelor of Computer Science</strong></p>
-                <p><em>Expected Graduation: 2029</em></p>
-                <ul>
-                    <li>Attended courses focusing on programming & application development.</li>
-                    <li>Participated in group projects to develop simple technology solutions applicable to everyday life.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>Universitas Muhammadiyah Jakarta</h3>
-                <p><strong>Bachelor of Criminal Law</strong></p>
-                <p><em>Graduated: August 2018</em></p>
-                <ul>
-                    <li>Member of Tapak Suci Putra Muhammadiyah & Student Executive Board.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>Pondok Modern Darussalam Gontor Ponorogo</h3>
-                <p><em>Graduated: September 2010</em></p>
-                <ul>
-                    <li>Award: Best Winner of Describing Movie in Arabic (1st out of 5 participants).</li>
-                    <li>Elected as a member of the Student Organization in 2009.</li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Certifications</h2>
-            <div class="entry">
-                <h3>Completed Certifications</h3>
-                <ul>
+    <section id="education" class="py-20 bg-cosmic-nebula/50 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="gradient-text">Edu</span><span class="text-cosmic-primary">cation</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas Nasional</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">Master of Business Law (On Leave)</p>
+                    <p class="text-cosmic-secondary text-sm">Focus on legal frameworks and compliance in business operations.</p>
+                </div>
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Cakrawala University</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">Bachelor of Computer Science</p>
+                    <p class="text-cosmic-secondary text-sm italic mb-1">Expected Graduation: 2029</p>
+                    <p class="text-cosmic-secondary text-sm">Focus on programming & application development.</p>
+                </div>
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas Muhammadiyah Jakarta</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">Bachelor of Criminal Law</p>
+                    <p class="text-cosmic-secondary text-sm italic mb-1">Graduated: August 2018</p>
+                    <p class="text-cosmic-secondary text-sm">Member of Tapak Suci & Student Executive Board.</p>
+                </div>
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Pondok Modern Darussalam Gontor</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">High School Equivalent</p>
+                    <p class="text-cosmic-secondary text-sm italic mb-1">Graduated: September 2010</p>
+                    <p class="text-cosmic-secondary text-sm">Award: Best Winner of Describing Movie in Arabic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="gradient-text">Personal</span> <span class="text-cosmic-primary">Projects</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-cosmic-dark/50 rounded-lg overflow-hidden border border-cosmic-nebula hover:border-cosmic-accent transition-colors group">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/600/400?random=5&grayscale" alt="React Hook Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 to-transparent"></div>
+                        <span class="absolute top-4 right-4 bg-cosmic-accent text-cosmic-dark px-3 py-1 rounded-full text-xs font-bold">React</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-orbitron text-cosmic-primary mb-2">Simple Web with React Hook</h3>
+                        <p class="text-cosmic-secondary mb-4">Features theme toggling (light/dark mode) with localStorage persistence and an interactive email subscription form with validation.</p>
+                        <a href="https://neo-1.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-cosmic-accent hover:text-cosmic-highlight text-sm font-bold flex items-center transition-colors">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-cosmic-dark/50 rounded-lg overflow-hidden border border-cosmic-nebula hover:border-cosmic-accent transition-colors group">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://picsum.photos/600/400?random=6&grayscale" alt="IT Help Desk Simulation" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cosmic-dark/90 to-transparent"></div>
+                        <span class="absolute top-4 right-4 bg-cosmic-highlight text-cosmic-dark px-3 py-1 rounded-full text-xs font-bold">IT Support</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-orbitron text-cosmic-primary mb-2">Virtual IT Help Desk Support (Simulation)</h3>
+                        <p class="text-cosmic-secondary mb-4">Created a virtual IT help desk to simulate troubleshooting common issues like network connectivity, software installation, and system errors, enhancing customer service skills.</p>
+                         <p class="text-cosmic-secondary text-sm italic">(Conceptual project)</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-12">
+                <a href="https://bit.ly/3SvmWI5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center border-2 border-cosmic-accent text-cosmic-accent hover:bg-cosmic-accent/10 font-bold py-3 px-6 rounded-full transition-colors">
+                    More on GitHub <i class="fab fa-github ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-20 bg-cosmic-nebula/50 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="text-cosmic-primary">Certifi</span><span class="gradient-text">cations</span>
+            </h2>
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">Completed</h3>
+                <ul class="list-disc list-inside text-cosmic-secondary mb-8 space-y-2">
                     <li>Google IT Support Professional Certificate</li>
                     <li>Certified Customer Service Professional (CCSP) | Jakarta International CS Institute</li>
                     <li>Business Management Course | IBM Institute Berlin – Germany</li>
@@ -106,118 +293,172 @@
                     <li>Technical Review for Employment Contracts | MSBM London – United Kingdom</li>
                     <li>Pendidikan Khusus Profesi Advokat (PKPA) | PERADI & Universitas Jayabaya</li>
                 </ul>
-            </div>
-            <div class="entry">
-                <h3>In Progress Certifications</h3>
-                <ul>
+                <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">In Progress</h3>
+                <ul class="list-disc list-inside text-cosmic-secondary space-y-2">
                     <li>AWS Certified Cloud Practitioner</li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Key Skills & Strengths</h2>
-            <div class="skills-grid">
-                <div><strong>Retail Operations:</strong> Sales Growth, Merchandising, Stock Management, Cost Control</div>
-                <div><strong>Leadership:</strong> Team Supervision, Staff Development, Performance Coaching</div>
-                <div><strong>Customer Relations:</strong> Conflict Resolution, Customer Satisfaction, Complaint Handling</div>
-                <div><strong>Technology Integration:</strong> Retail System Management, IT Support, Network Setup</div>
+    <section id="volunteer" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="gradient-text">Volunteer</span> <span class="text-cosmic-primary">Work</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Fundraising Volunteer</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">Sunda Strait Tsunami & Lombok & Sulawesi Earthquakes</p>
+                    <p class="text-cosmic-secondary text-sm italic mb-1">Dec 2018 - Jan 2019</p>
+                    <p class="text-cosmic-secondary text-sm">Led fundraising efforts, increasing donations by 70%.</p>
+                </div>
+                <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
+                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Teacher's Aide Volunteer</h3>
+                    <p class="text-cosmic-highlight font-bold mb-1">Yayasan Yatim Piatu Bina Auladi Mandiri</p>
+                    <p class="text-cosmic-secondary text-sm italic mb-1">Jan 2019 - Dec 2020</p>
+                    <p class="text-cosmic-secondary text-sm">Developed lesson plans, improving participation by 60%.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Professional Experience</h2>
-            <div class="entry">
-                <h3>Assistant Manager (Operations) – IBD (PT. Ibunda Bhakti Usaha)</h3>
-                <p class="date">Apr 2023 - Feb 2025</p>
-                <ul>
-                    <li>Led all aspects of retail operations, focusing on improving store performance and sales growth.</li>
-                    <li>Managed inventory, costs, and budgeting, ensuring optimal stock levels and reducing excess inventory.</li>
-                    <li>Developed and implemented customer service strategies, achieving a 95% satisfaction rate.</li>
-                    <li>Collaborated with cross-functional teams to streamline store operations, improving communication and workflow.</li>
-                    <li>Tracked and analyzed sales data, identifying trends to enhance promotional strategies and improve performance.</li>
-                </ul>
+    <section id="contact" class="py-20 bg-cosmic-nebula/50 relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+                <span class="text-cosmic-primary">Get In</span> <span class="gradient-text">Touch</span>
+            </h2>
+            <div class="max-w-3xl mx-auto bg-cosmic-nebula/80 p-8 md:p-12 rounded-lg border border-cosmic-nebula">
+                <form class="space-y-6" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-cosmic-secondary mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-cosmic-dark/50 border border-cosmic-nebula focus:border-cosmic-accent focus:ring-2 focus:ring-cosmic-accent/50 rounded-lg px-4 py-3 text-cosmic-primary outline-none transition-all">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-cosmic-secondary mb-2">Your Email</label>
+                            <input type="email" id="email" name="_replyto" required class="w-full bg-cosmic-dark/50 border border-cosmic-nebula focus:border-cosmic-accent focus:ring-2 focus:ring-cosmic-accent/50 rounded-lg px-4 py-3 text-cosmic-primary outline-none transition-all">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-cosmic-secondary mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full bg-cosmic-dark/50 border border-cosmic-nebula focus:border-cosmic-accent focus:ring-2 focus:ring-cosmic-accent/50 rounded-lg px-4 py-3 text-cosmic-primary outline-none transition-all">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-cosmic-secondary mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full bg-cosmic-dark/50 border border-cosmic-nebula focus:border-cosmic-accent focus:ring-2 focus:ring-cosmic-accent/50 rounded-lg px-4 py-3 text-cosmic-primary outline-none transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-cosmic-accent hover:bg-cosmic-highlight text-cosmic-dark font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center">
+                        <i class="fas fa-paper-plane mr-2"></i> Send Message
+                    </button>
+                </form>
+                 <div class="text-center mt-8 text-cosmic-secondary">
+                    <p class="mb-2">Or reach me directly:</p>
+                    <p><i class="fas fa-envelope mr-2 text-cosmic-accent"></i> <a href="mailto:zakyzulfikarworld@gmail.com" class="hover:text-cosmic-primary">zakyzulfikarworld@gmail.com</a></p>
+                    <p><i class="fas fa-phone mr-2 text-cosmic-accent"></i> 081286710045</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="https://bit.ly/4mfNbjC" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://bit.ly/3SvmWI5" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                         <a href="https://bit.ly/3F6KpMF" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="itch.io">
+                            <i class="fab fa-itch-io"></i>
+                        </a>
+                        <a href="https://bit.ly/4dwoLyp" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="LeetCode">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="https://bit.ly/42RiCZN" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="Medium">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="entry">
-                <h3>Senior Staff Supply Chain Management (Strategy) – LSI (PT. Lotte Shopping Indonesia)</h3>
-                <p class="date">Jul 2020 - Apr 2023</p>
-                <ul>
-                    <li>Developed and updated store layouts and product placements, increasing store sales by 92%.</li>
-                    <li>Managed staff performance, fostering a high-performance culture that drove sales and customer satisfaction.</li>
-                    <li>Executed promotional campaigns that successfully responded to changing market conditions and consumer demand.</li>
-                    <li>Oversaw visual merchandising and in-store promotions, leading to better customer engagement and experience.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h3>Foreign Officer (Operations) – BBCA (PT. Bank Central Asia)</h3>
-                <p class="date">Dec 2018 - Nov 2019</p>
-                <ul>
-                    <li>Managed foreign client accounts, ensuring smooth service operations and resolving issues to maintain customer satisfaction.</li>
-                    <li>Performed extensive data analysis to identify fraud patterns, significantly improving risk management strategies.</li>
-                    <li>Contributed to the creation and implementation of customer support procedures, improving operational efficiency.</li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cv-section">
-            <h2>Personal Projects / IT Support Experience</h2>
-            <div class="entry">
-                <h3>Virtual IT Help Desk Support (Simulation)</h3>
-                <ul>
-                    <li>Created a virtual IT help desk to simulate troubleshooting and support scenarios, improving customer service skills.</li>
-                    <li>Practiced remote troubleshooting of common issues such as network connectivity, software installation, and system errors.</li>
-                </ul>
+    <footer class="bg-cosmic-nebula py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-orbitron font-bold gradient-text">M ZAKY ZULFIKAR</a>
+                    <p class="text-cosmic-secondary mt-2 text-sm">Aspiring Software Engineer & Operations Professional.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://bit.ly/4mfNbjC" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://bit.ly/3SvmWI5" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                     <a href="https://bit.ly/3F6KpMF" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="itch.io">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                    <a href="https://bit.ly/4dwoLyp" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://bit.ly/42RiCZN" target="_blank" rel="noopener noreferrer" class="text-cosmic-secondary hover:text-cosmic-accent text-2xl transition-colors" title="Medium">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </div>
             </div>
-            <div class="entry">
-                <h3>Simple Web with React Hook</h3>
-                <ul>
-                    <li>Theme Toggling - Switch between light and dark mode with localStorage persistence</li>
-                    <li>Email Subscription Form - Interactive form with validation</li>
-                    <li>Vercel Deployment Link: <a href="https://neo-1.vercel.app/" target="_blank">https://neo-1.vercel.app/</a></li>
-                </ul>
+            <div class="border-t border-cosmic-nebula/50 mt-8 pt-8 text-center text-cosmic-secondary text-sm">
+                <p>© <span id="currentYear"></span> M Zaky Zulfikar. All rights reserved. Inspired by the Cosmos.</p>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <section class="cv-section">
-            <h2>Volunteer Experience</h2>
-            <div class="entry">
-                <h3>Fundraising Volunteer – Sunda Strait Tsunami & Lombok & Sulawesi Earthquakes</h3>
-                <p class="date">Dec 2018 - Jan 2019</p>
-                <ul>
-                    <li>Led fundraising efforts, increasing donations by 70% through effective communication and event promotion.</li>
-                    <li>Produced materials for outreach and collaborated with local organizations for successful fundraising events.</li>
-                </ul>
-            </div>
-             <div class="entry">
-                <h3>Teacher's Aide Volunteer – Yayasan Yatim Piatu Bina Auladi Mandiri</h3>
-                <p class="date">Jan 2019 - Dec 2020</p>
-                <ul>
-                    <li>Developed lesson plans and provided one-on-one support, improving participation and engagement by 60%.</li>
-                </ul>
-            </div>
-        </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const starsContainer = document.getElementById('stars-container');
+            if (starsContainer) {
+                const starCount = 150;
+                for (let i = 0; i < starCount; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+                    const size = Math.random() * 2 + 1;
+                    star.style.width = `${size}px`;
+                    star.style.height = `${size}px`;
+                    star.style.left = `${Math.random() * 100}%`;
+                    star.style.top = `${Math.random() * 100}%`;
+                    star.style.setProperty('--duration', `${Math.random() * 4 + 3}s`);
+                    starsContainer.appendChild(star);
+                }
+            }
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#') && href.length > 1) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                            const mobileMenu = document.getElementById('mobile-menu');
+                            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                                mobileMenu.classList.add('hidden');
+                            }
+                        }
+                    }
+                });
+            });
 
-        <section class="cv-section">
-            <h2>Tech Stack</h2>
-            <div class="tech-stack">
-                <p><strong>Retail Systems:</strong> Point of Sale (POS), Inventory Management, Sales Analytics</p>
-                <p><strong>IT Tools:</strong> Microsoft Word, Excel, PowerPoint, Visual Studio, GIMP</p>
-                <p><strong>Project Management:</strong> Spaceman</p>
-            </div>
-        </section>
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
 
-        <section class="cv-section">
-            <h2>Languages</h2>
-            <div class="languages">
-                <p><strong>English:</strong> Professional Working Proficiency</p>
-                <p><strong>Arabic:</strong> Basic Proficiency</p>
-                <p><strong>Indonesian:</strong> Native</p>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2024 M Zaky Zulfikar. Dibuat dengan HTML & CSS.</p>
-        </footer>
-    </div>
+            const yearSpan = document.getElementById('currentYear');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 </body>
 </html>
