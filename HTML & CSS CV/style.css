@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +21,11 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
 .cv-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
-    border-bottom: 3px solid #007BFF; /* Biru tema */
+    align-items: flex-start;
+    border-bottom: 3px solid #007BFF;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -35,22 +33,25 @@ body {
 .header-info h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #0056b3; /* Biru lebih gelap */
+    color: #0056b3;
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .contact-info p {
     font-size: 0.95em;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #555;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info p i {
     margin-right: 8px;
-    color: #007BFF; /* Biru tema */
-    width: 20px; /* ensure icons align */
+    color: #007BFF;
+    width: 20px;
     text-align: center;
+    font-size: 1.1em;
 }
 
 .contact-info a {
@@ -58,8 +59,49 @@ body {
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info a:not(.contact-badge):hover {
     text-decoration: underline;
+}
+
+.contact-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-left: 5px;
+}
+
+.contact-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.linkedin-badge {
+    background-color: #0077B5;
+}
+
+.github-badge {
+    background-color: #333;
+}
+.github-badge:hover {
+    background-color: #444;
+}
+
+.itch-badge {
+    background-color: #FA5C5C;
+}
+
+.leetcode-badge {
+    background-color: #FFA116;
+    color: #383838;
+}
+.leetcode-badge:hover {
+    background-color: #fca92a;
 }
 
 .header-photo img {
@@ -67,11 +109,10 @@ body {
     height: 130px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #007BFF; /* Biru tema */
-    margin-left: 20px; /* Add some space if info text is long */
+    border: 4px solid #007BFF;
+    margin-left: 20px;
 }
 
-/* Sections */
 .cv-section {
     margin-bottom: 30px;
 }
@@ -79,8 +120,8 @@ body {
 .cv-section h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
-    color: #0056b3; /* Biru lebih gelap */
-    border-bottom: 2px solid #007BFF; /* Biru tema */
+    color: #0056b3;
+    border-bottom: 2px solid #007BFF;
     padding-bottom: 8px;
     margin-bottom: 15px;
     font-weight: 500;
@@ -93,29 +134,28 @@ body {
 }
 
 .cv-section ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .cv-section ul li {
-    padding-left: 25px; /* Add padding for custom bullet */
-    position: relative; /* For custom bullet positioning */
+    padding-left: 25px;
+    position: relative;
     margin-bottom: 6px;
 }
 
 .cv-section ul li::before {
-    content: '•'; /* Custom bullet character */
-    color: #007BFF; /* Biru tema */
+    content: '•';
+    color: #007BFF;
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1.2em; /* Position to the left */
+    margin-left: -1.2em;
     position: absolute;
-    left: 10px; /* Adjust as needed */
+    left: 10px;
     top: 0;
 }
 
-/* Entry specific styling (for education, experience, etc.) */
 .entry {
     margin-bottom: 20px;
 }
@@ -138,10 +178,9 @@ body {
     color: #666;
     font-style: italic;
     margin-bottom: 8px;
-    display: block; /* Ensures date is on its own line or can be styled block-like */
+    display: block;
 }
 
-/* Skills Grid */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -149,29 +188,27 @@ body {
 }
 
 .skills-grid div {
-    background-color: #e9f5ff; /* Biru muda */
+    background-color: #e9f5ff;
     padding: 10px 15px;
     border-radius: 5px;
-    border-left: 4px solid #007BFF; /* Biru tema */
+    border-left: 4px solid #007BFF;
     font-size: 0.95em;
 }
 
 .skills-grid div strong {
-    color: #0056b3; /* Biru lebih gelap */
+    color: #0056b3;
 }
 
-/* Tech Stack & Languages */
 .tech-stack p, .languages p {
     margin-bottom: 8px;
     font-size: 1em;
 }
 
 .tech-stack p strong, .languages p strong {
-    color: #0056b3; /* Biru lebih gelap */
+    color: #0056b3;
     margin-right: 5px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
@@ -181,10 +218,9 @@ footer {
     color: #777;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .cv-header {
-        flex-direction: column-reverse; /* Photo on top on mobile */
+        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
@@ -199,8 +235,11 @@ footer {
     .header-info {
         width: 100%;
     }
+    .contact-info p {
+        justify-content: center;
+    }
     .contact-info p i {
-        width: auto; /* Allow icon width to adjust */
+        width: auto;
     }
 
     .cv-container {
@@ -218,7 +257,7 @@ footer {
 
 @media (max-width: 480px) {
     .skills-grid {
-        grid-template-columns: 1fr; /* Stack skills on very small screens */
+        grid-template-columns: 1fr;
     }
     .cv-container {
         margin: 10px auto;
