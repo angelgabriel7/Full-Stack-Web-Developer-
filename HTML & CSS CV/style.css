@@ -104,6 +104,14 @@ body {
     background-color: #fca92a;
 }
 
+.medium-badge {
+    background-color: #000000;
+}
+.medium-badge:hover {
+    background-color: #1c1c1c;
+}
+
+
 .header-photo img {
     width: 130px;
     height: 130px;
