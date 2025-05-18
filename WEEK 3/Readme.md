@@ -60,16 +60,16 @@ Screenshot Aplikasi
 Berikut adalah beberapa contoh tampilan aplikasi saat dijalankan:
 
 **1. Menu Utama:**
-![Tampilan Menu Utama Aplikasi Kasir](screenshots/menu_utama1.png)
+![Tampilan Menu Utama Aplikasi Kasir](project kasir js/screenshots/menu_utama1.png)
 
 **2. Melihat Daftar Barang:**
-![Melihat Daftar Barang](screenshots/melihat_daftar_barang.png)
+![Melihat Daftar Barang](project kasir js/creenshots/melihat_daftar_barang.png)
 
 **3. Menghapus Barang:**
-![Menghapus Barang dari Keranjang](screenshots/menghapus_barang.png)
+![Menghapus Barang dari Keranjang](project kasir js/screenshots/menghapus_barang.png)
 
 **4. Mencetak Struk Belanja:**
-![Contoh Struk Belanja yang Dicetak](screenshots/mencetak_struk.png)
+![Contoh Struk Belanja yang Dicetak](project kasir js/screenshots/mencetak_struk.png)
 
 **5. Keluar:**
-![Keluar dari Aplikasi](screenshots/keluar.png)
+![Keluar dari Aplikasi](project kasir js/screenshots/keluar.png)
