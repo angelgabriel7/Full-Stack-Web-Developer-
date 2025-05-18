@@ -54,16 +54,21 @@ Cara Menjalankan Aplikasi
     
 
 Screenshot Aplikasi
--------------------
+------------------
 
 Berikut adalah beberapa contoh tampilan aplikasi saat dijalankan:
 
-1\. Menu Utama: screenshots/menu_utama.png
+**1. Menu Utama:**
+![Tampilan Menu Utama Aplikasi Kasir](screenshots/menu_utama.png)
 
-2\. Melihat Daftar barang: screenshots/melihat_daftar_barang.png
+**2. Melihat Daftar Barang:**
+![Melihat Daftar Barang](screenshots/melihat_daftar_barang.png)
 
-3\. menghapus barang: screenshots/menghapus_barang.png
+**3. Menghapus Barang:**
+![Menghapus Barang dari Keranjang](screenshots/menghapus_barang.png)
 
-4\. Mencetak Struk Belanja: screenshots/mencetak_struk.png
+**4. Mencetak Struk Belanja:**
+![Contoh Struk Belanja yang Dicetak](screenshots/mencetak_struk.png)
 
-5\. Keluar: screenshots/keluar.png
+**5. Keluar:**
+![Keluar dari Aplikasi](screenshots/keluar.png)
