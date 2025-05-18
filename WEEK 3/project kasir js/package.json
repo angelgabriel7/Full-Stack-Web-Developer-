@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "week-3": "file:"
   },
   "name": "week-3",
   "version": "1.0.0",
