@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+/* REMOVED @import for Google Fonts as it's in index.html */
 
 body {
     background-color: #0f0e17;
-    color: #fffffe;
+    color: #fffffe; /* Default text color */
     overflow-x: hidden;
-    font-family: 'Space Mono', monospace;
+    /* UPDATED FONT FAMILY FALLBACK - Tailwind class on <body> will take precedence */
+    font-family: 'Inter', sans-serif; 
 }
 
 .star {

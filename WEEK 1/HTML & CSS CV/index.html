@@ -7,7 +7,8 @@
     <meta name="description" content="Professional portfolio for M Zaky Zulfikar, showcasing skills in operations, IT, and software engineering.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- UPDATED GOOGLE FONTS LINK -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
@@ -23,9 +24,11 @@
                             nebula: "#2e2f3e"
                         }
                     },
+                    // UPDATED FONT FAMILY CONFIGURATION
                     fontFamily: {
-                        orbitron: ["Orbitron", "sans-serif"],
-                        space: ["Space Mono", "monospace"]
+                        heading: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"], // Default sans-serif
                     },
                     backgroundImage: {
                         'stars': "url('https://picsum.photos/1920/1080?random=1&blur=2&grayscale')",
@@ -36,12 +39,14 @@
         }
     </script>
 </head>
-<body class="font-space min-h-screen relative">
+<!-- UPDATED BODY FONT CLASS -->
+<body class="font-body text-cosmic-primary min-h-screen relative">
     <div id="stars-container" class="fixed inset-0 -z-10"></div>
 
     <header class="fixed w-full z-50 backdrop-blur-md bg-cosmic-nebula/80">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-orbitron font-bold gradient-text">M ZAKY ZULFIKAR</a>
+            <!-- UPDATED FONT CLASS -->
+            <a href="#" class="text-2xl font-heading font-bold gradient-text">M ZAKY ZULFIKAR</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#about" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">About</a>
                 <a href="#experience" class="text-cosmic-secondary hover:text-cosmic-accent transition-colors">Experience</a>
@@ -67,7 +72,8 @@
     <section class="min-h-screen flex items-center pt-24 md:pt-20">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-orbitron font-bold mb-6">
+                <!-- UPDATED FONT CLASS -->
+                <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">
                     <span class="text-cosmic-primary">M Zaky</span> <br>
                     <span class="gradient-text">Zulfikar</span>
                 </h1>
@@ -98,7 +104,8 @@
 
     <section id="about" class="py-20 bg-cosmic-nebula/50 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="gradient-text">About</span> <span class="text-cosmic-primary">Me</span>
             </h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
@@ -106,26 +113,32 @@
                     <img src="assets/foto.png" alt="M Zaky Zulfikar" class="rounded-lg w-full max-w-xs mx-auto border-2 border-cosmic-accent/50">
                 </div>
                 <div class="md:w-2/3">
-                    <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">Professional Summary</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-2xl font-heading text-cosmic-accent mb-4">Professional Summary</h3>
                     <p class="text-cosmic-secondary mb-6">
                         Results-driven professional with a strong background in retail operations, team leadership, and process optimization. Proven success in driving sales growth, improving customer satisfaction, and managing cross-functional teams. Currently transitioning into software engineering, leveraging foundational IT knowledge, programming skills, and a passion for developing innovative technology solutions to solve real-world challenges.
                     </p>
-                    <h4 class="text-xl font-orbitron text-cosmic-accent mb-3">Key Skills & Strengths</h4>
+                    <!-- UPDATED FONT CLASS -->
+                    <h4 class="text-xl font-heading text-cosmic-accent mb-3">Key Skills & Strengths</h4>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                         <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
-                            <h5 class="font-orbitron text-cosmic-primary mb-1">Technology & IT</h5>
+                            <!-- UPDATED FONT CLASS -->
+                            <h5 class="font-heading text-cosmic-primary mb-1">Technology & IT</h5>
                             <p class="text-sm text-cosmic-secondary">Cloud Computing, DevOps, C, Rust, Mobile Programming, React, HTML, CSS, VS Code, Retail System Mgt, IT Support, Network Setup</p>
                         </div>
                         <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
-                            <h5 class="font-orbitron text-cosmic-primary mb-1">Retail Operations</h5>
+                            <!-- UPDATED FONT CLASS -->
+                            <h5 class="font-heading text-cosmic-primary mb-1">Retail Operations</h5>
                             <p class="text-sm text-cosmic-secondary">Sales Growth, Merchandising, Stock Management, Cost Control</p>
                         </div>
                         <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
-                            <h5 class="font-orbitron text-cosmic-primary mb-1">Leadership</h5>
+                            <!-- UPDATED FONT CLASS -->
+                            <h5 class="font-heading text-cosmic-primary mb-1">Leadership</h5>
                             <p class="text-sm text-cosmic-secondary">Team Supervision, Staff Development, Performance Coaching</p>
                         </div>
                         <div class="bg-cosmic-dark/50 p-4 rounded-lg border border-cosmic-nebula">
-                            <h5 class="font-orbitron text-cosmic-primary mb-1">Customer Relations</h5>
+                            <!-- UPDATED FONT CLASS -->
+                            <h5 class="font-heading text-cosmic-primary mb-1">Customer Relations</h5>
                             <p class="text-sm text-cosmic-secondary">Conflict Resolution, Customer Satisfaction, Complaint Handling</p>
                         </div>
                     </div>
@@ -136,7 +149,8 @@
 
     <section id="experience" class="py-20 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="text-cosmic-primary">Professional</span> <span class="gradient-text">Experience</span>
             </h2>
             <div class="max-w-3xl mx-auto">
@@ -149,7 +163,8 @@
                         </div>
                         <div class="timeline-content md:w-1/2 md:pl-8">
                              <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
-                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Assistant Manager (Operations)</h3>
+                                <!-- UPDATED FONT CLASS -->
+                                <h3 class="text-xl font-heading text-cosmic-accent mb-2">Assistant Manager (Operations)</h3>
                                 <p class="text-cosmic-highlight font-bold mb-1">IBD (PT. Ibunda Bhakti Usaha)</p>
                                 <p class="text-cosmic-secondary text-sm mb-2">Apr 2023 - Feb 2025</p>
                                 <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1">
@@ -168,7 +183,8 @@
                         </div>
                         <div class="timeline-content md:w-1/2 md:pr-8 md:text-right">
                             <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
-                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Senior Staff Supply Chain Management (Strategy)</h3>
+                                <!-- UPDATED FONT CLASS -->
+                                <h3 class="text-xl font-heading text-cosmic-accent mb-2">Senior Staff Supply Chain Management (Strategy)</h3>
                                 <p class="text-cosmic-highlight font-bold mb-1">LSI (PT. Lotte Shopping Indonesia)</p>
                                 <p class="text-cosmic-secondary text-sm mb-2">Jul 2020 - Apr 2023</p>
                                 <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1 text-left md:text-right">
@@ -187,7 +203,8 @@
                         </div>
                         <div class="timeline-content md:w-1/2 md:pl-8">
                             <div class="bg-cosmic-nebula/50 p-6 rounded-lg border border-cosmic-nebula">
-                                <h3 class="text-xl font-orbitron text-cosmic-accent mb-2">Foreign Officer (Operations)</h3>
+                                <!-- UPDATED FONT CLASS -->
+                                <h3 class="text-xl font-heading text-cosmic-accent mb-2">Foreign Officer (Operations)</h3>
                                 <p class="text-cosmic-highlight font-bold mb-1">BBCA (PT. Bank Central Asia)</p>
                                 <p class="text-cosmic-secondary text-sm mb-2">Dec 2018 - Nov 2019</p>
                                 <ul class="list-disc list-inside text-cosmic-secondary text-sm space-y-1">
@@ -205,47 +222,56 @@
 
     <section id="education" class="py-20 bg-cosmic-nebula/50 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="gradient-text">Edu</span><span class="text-cosmic-primary">cation</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas Nasional</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Universitas Nasional</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Master of Business Law (On Leave)</p>
                     <p class="text-cosmic-secondary text-sm">Focus on legal frameworks and compliance in business operations.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Cakrawala University</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Cakrawala University</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Bachelor of Computer Science</p>
                     <p class="text-cosmic-secondary text-sm">Focus on programming & application development.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas Muhammadiyah Jakarta</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Universitas Muhammadiyah Jakarta</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Bachelor of Criminal Law</p>
                     <p class="text-cosmic-secondary text-sm">Member of Tapak Suci & Student Executive Board.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Pondok Modern Darussalam Gontor PONOROGO East Java</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Pondok Modern Darussalam Gontor PONOROGO East Java</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">High School Equivalent</p>
                     <p class="text-cosmic-secondary text-sm">Award: Best Winner of Describing Movie in Arabic.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas islam Negeri Syarif Hidayatullah Jakarta UIN</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Universitas islam Negeri Syarif Hidayatullah Jakarta UIN</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Major: Family Law</p>
                     <p class="text-cosmic-secondary text-sm">Gained comprehensive knowledge of Islamic family law principles and their application in modern legal contexts. Actively participated in student organizations and legal discussion forums to enhance understanding and networking.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Sekolah Tinggi Ilmu Ekonomi Islamiyah</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Sekolah Tinggi Ilmu Ekonomi Islamiyah</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Major: Development Economics</p>
                     <p class="text-cosmic-secondary text-sm">Studied fundamental economic theories with a focus on Islamic economic principles and development strategies. Engaged in community-based economic research projects and seminars to apply theoretical knowledge practically.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Universitas Darussalam Gontor</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Universitas Darussalam Gontor</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Major: Islamic Education</p>
                     <p class="text-cosmic-secondary text-sm">2010 - 2011. Focused on principles and practices of Islamic education.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Language Institution and Professional Education (LBPP) LIA</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Language Institution and Professional Education (LBPP) LIA</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Course: TOEFL Preparation</p>
                     <p class="text-cosmic-secondary text-sm">TOEFL Preparation from basic to Intermediate.</p>
                 </div>
@@ -255,7 +281,8 @@
 
     <section id="projects" class="py-20 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="gradient-text">Personal</span> <span class="text-cosmic-primary">Projects</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -266,7 +293,8 @@
                         <span class="absolute top-4 right-4 bg-cosmic-accent text-cosmic-dark px-3 py-1 rounded-full text-xs font-bold">React</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-orbitron text-cosmic-primary mb-2">Simple Web with React Hook</h3>
+                        <!-- UPDATED FONT CLASS -->
+                        <h3 class="text-xl font-heading text-cosmic-primary mb-2">Simple Web with React Hook</h3>
                         <p class="text-cosmic-secondary mb-4">Features theme toggling (light/dark mode) with localStorage persistence and an interactive email subscription form with validation.</p>
                         <a href="https://neo-1.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-cosmic-accent hover:text-cosmic-highlight text-sm font-bold flex items-center transition-colors">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
@@ -281,7 +309,8 @@
                         <span class="absolute top-4 right-4 bg-cosmic-highlight text-cosmic-dark px-3 py-1 rounded-full text-xs font-bold">IT Support</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-orbitron text-cosmic-primary mb-2">Virtual IT Help Desk Support (Simulation)</h3>
+                        <!-- UPDATED FONT CLASS -->
+                        <h3 class="text-xl font-heading text-cosmic-primary mb-2">Virtual IT Help Desk Support (Simulation)</h3>
                         <p class="text-cosmic-secondary mb-4">Created a virtual IT help desk to simulate troubleshooting common issues like network connectivity, software installation, and system errors, enhancing customer service skills.</p>
                         <a href="https://github.com/angelgabriel7/virtual-it-helpdesk-simulation/tree/main" target="_blank" rel="noopener noreferrer" class="text-cosmic-accent hover:text-cosmic-highlight text-sm font-bold flex items-center transition-colors">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
@@ -296,7 +325,8 @@
                         <span class="absolute top-4 right-4 bg-cosmic-highlight text-cosmic-dark px-3 py-1 rounded-full text-xs font-bold">Game Dev</span>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-orbitron text-cosmic-primary mb-2">Games on itch.io</h3>
+                        <!-- UPDATED FONT CLASS -->
+                        <h3 class="text-xl font-heading text-cosmic-primary mb-2">Games on itch.io</h3>
                         <p class="text-cosmic-secondary mb-4">Developed several interactive games published on itch.io, demonstrating skills in game design, programming, and creativity in digital content creation. Managed the entire game development process from concept, coding, to publication, and incorporated user feedback to improve quality.</p>
                         <a href="https://angelgabriel1.itch.io/" target="_blank" rel="noopener noreferrer" class="text-cosmic-accent hover:text-cosmic-highlight text-sm font-bold flex items-center transition-colors">
                             View Project <i class="fas fa-external-link-alt ml-2"></i>
@@ -314,11 +344,13 @@
 
     <section id="certifications" class="py-20 bg-cosmic-nebula/50 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="text-cosmic-primary">Certifi</span><span class="gradient-text">cations</span>
             </h2>
             <div class="max-w-3xl mx-auto">
-                <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">Completed</h3>
+                <!-- UPDATED FONT CLASS -->
+                <h3 class="text-2xl font-heading text-cosmic-accent mb-4">Completed</h3>
                 <ul class="list-disc list-inside text-cosmic-secondary mb-8 space-y-2">
                     <li>Google IT Support Professional Certificate</li>
                     <li>Certified Customer Service Professional (CCSP) | Jakarta International CS Institute</li>
@@ -327,7 +359,8 @@
                     <li>Technical Review for Employment Contracts | MSBM London – United Kingdom</li>
                     <li>Pendidikan Khusus Profesi Advokat (PKPA) | PERADI & Universitas Jayabaya</li>
                 </ul>
-                <h3 class="text-2xl font-orbitron text-cosmic-accent mb-4">In Progress</h3>
+                <!-- UPDATED FONT CLASS -->
+                <h3 class="text-2xl font-heading text-cosmic-accent mb-4">In Progress</h3>
                 <ul class="list-disc list-inside text-cosmic-secondary space-y-2">
                     <li>AWS Certified Cloud Practitioner</li>
                 </ul>
@@ -337,18 +370,21 @@
 
     <section id="volunteer" class="py-20 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="gradient-text">Volunteer</span> <span class="text-cosmic-primary">Work</span>
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Fundraising Volunteer</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Fundraising Volunteer</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Sunda Strait Tsunami & Lombok & Sulawesi Earthquakes</p>
                     <p class="text-cosmic-secondary text-sm italic mb-1">Dec 2018 - Jan 2019</p>
                     <p class="text-cosmic-secondary text-sm">Led fundraising efforts, increasing donations by 70%.</p>
                 </div>
                 <div class="bg-cosmic-dark/50 p-6 rounded-lg border border-cosmic-nebula">
-                    <h3 class="text-xl font-orbitron text-cosmic-accent mb-1">Teacher's Aide Volunteer</h3>
+                    <!-- UPDATED FONT CLASS -->
+                    <h3 class="text-xl font-heading text-cosmic-accent mb-1">Teacher's Aide Volunteer</h3>
                     <p class="text-cosmic-highlight font-bold mb-1">Yayasan Yatim Piatu Bina Auladi Mandiri</p>
                     <p class="text-cosmic-secondary text-sm italic mb-1">Jan 2019 - Dec 2020</p>
                     <p class="text-cosmic-secondary text-sm">Developed lesson plans, improving participation by 60%.</p>
@@ -359,7 +395,8 @@
 
     <section id="contact" class="py-20 bg-cosmic-nebula/50 relative">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-orbitron font-bold mb-16 text-center">
+            <!-- UPDATED FONT CLASS -->
+            <h2 class="text-4xl font-heading font-bold mb-16 text-center">
                 <span class="text-cosmic-primary">Get In</span> <span class="gradient-text">Touch</span>
             </h2>
             <div class="max-w-3xl mx-auto bg-cosmic-nebula/80 p-8 md:p-12 rounded-lg border border-cosmic-nebula">
@@ -416,7 +453,8 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="#" class="text-2xl font-orbitron font-bold gradient-text">M ZAKY ZULFIKAR</a>
+                    <!-- UPDATED FONT CLASS -->
+                    <a href="#" class="text-2xl font-heading font-bold gradient-text">M ZAKY ZULFIKAR</a>
                     <p class="text-cosmic-secondary mt-2 text-sm">Aspiring Software Engineer & Operations Professional.</p>
                 </div>
                 <div class="flex space-x-4">
