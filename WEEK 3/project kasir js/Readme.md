@@ -60,7 +60,7 @@ Screenshot Aplikasi
 Berikut adalah beberapa contoh tampilan aplikasi saat dijalankan:
 
 **1. Menu Utama:**
-![Tampilan Menu Utama Aplikasi Kasir](screenshots/menu_utama.png)
+![Tampilan Menu Utama Aplikasi Kasir](screenshots/menu_utama1.png)
 
 **2. Melihat Daftar Barang:**
 ![Melihat Daftar Barang](screenshots/melihat_daftar_barang.png)
