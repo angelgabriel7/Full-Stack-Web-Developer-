@@ -1,0 +1,6 @@
+tugas Week 3 :
+Buatlah sebuah aplikasi kasir dengan berjalan di terminal,
+Akan ada keranjang dengan data kosong, dan juga list barang dengan harganya,
+Kita bisa memasukan barang dan kuantitas,
+Bisa menghapus barang dari keranjang,
+Mencetak struk belanja
