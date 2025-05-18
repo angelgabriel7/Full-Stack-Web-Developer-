@@ -1,4 +1,4 @@
-# Aplikasi Kasir Sederhana (JavaScript - Node.js) - WEEK 3 Project
+# Aplikasi Kasir Sederhana (JavaScript - Node.js)
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) [![readline-sync](https://img.shields.io/npm/v/readline-sync?style=for-the-badge&label=readline-sync&color=blue)](https://www.npmjs.com/package/readline-sync)
 
