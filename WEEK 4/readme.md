@@ -82,5 +82,4 @@ Here are some glimpses of the React Cashier Application in action:
 *   **Lists & Keys:** Renders lists of items using the `.map()` method with unique `key` props.
 
 ---
-
-Enjoy trying it out! Feel free to explore the code. For questions or feedback, please refer to the project's issue tracker or contact the repository owner. :wink:
+Good luck, if you have any questions or suggestions, dont try to ask me.:wink:
