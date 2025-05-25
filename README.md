@@ -1,4 +1,4 @@
-# Tugas Bootcamp Full Stack Web Developer
+# Bootcamp Full Stack Web Developer
 
 Repositori ini berisi kumpulan tugas dari bootcamp Full Stack Web Developer yang saya ikuti. Tujuan dari repositori ini adalah untuk mendokumentasikan proses pembelajaran dan perkembangan keterampilan dalam pengembangan web.
 
