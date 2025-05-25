@@ -82,4 +82,4 @@ Berikut adalah beberapa cuplikan tampilan dari Aplikasi Kasir React:
 
 ---
 
-Selamat mencoba ,  Jika ada pertanyaan atau masukan, jangan coba coba tanya saya, HAHAHAHA
+Selamat mencoba ,  Jika ada pertanyaan atau masukan, jangan coba coba tanya saya, ^_^
