@@ -41,16 +41,14 @@ To run this application on your computer:
 2.  **Clone the Repository (If you haven't already):**
     ```bash
     git clone "your_repository_link" 
-    cd "your_repository_directory/Full-Stack-Web-Developer-/WEEK 4/aplikasi kasir react" 
+    cd "your_repository" 
     ```
-    *(Note: Replace `"your_repository_link"` and `"your_repository_directory"` with your actual repository link and local path. Adjust the `cd` path to point directly to the `aplikasi kasir react` folder within your WEEK 4 directory.)*
 
 3.  **Navigate to the Project Directory:**
     Ensure you are inside the React project directory:
     ```bash
     cd "aplikasi kasir react" 
     ```
-    *(If your `README.md` is in the `WEEK 4` folder, and `aplikasi kasir react` is a subfolder, this step is crucial after cloning.)*
 
 4.  **Install Dependencies:**
     Run the following command to install all necessary packages:
@@ -73,7 +71,6 @@ Here are some glimpses of the React Cashier Application in action:
 | :------------------------------------------------------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
 | ![Product List](aplikasi%20kasir%20react/screenshots/daftar_produk.png) | ![Shopping Cart](aplikasi%20kasir%20react/screenshots/keranjang.png) | ![Sales Receipt](aplikasi%20kasir%20react/screenshots/struk_belanja.png) |
 
-*(**Note:** Ensure the screenshot filenames above, like `daftar_produk.png`, `keranjang.png`, and `struk_belanja.png`, match your actual image files located in the `WEEK 4/aplikasi kasir react/screenshots/` folder. Remember to replace `aplikasi%20kasir%20react` with `aplikasi-kasir-react` or similar if you've renamed the folder to remove spaces.)*
 
 ## 💡 React Concepts Applied
 
