@@ -40,14 +40,14 @@ Untuk menjalankan aplikasi ini di komputer Anda:
 
 2.  **Kloning Repositori (Jika Belum):**
     ```bash
-    git clone (your link)
-    cd (your directory)
+    git clone "your link"
+    cd "your directory"
     ```
 
 3.  **Navigasi ke Direktori Proyek:**
     Pastikan Anda berada di dalam direktori proyek React:
     ```bash
-    cd "aplikasi kasir react" 
+    cd "your folder name" 
     ```
 
 4.  **Instal Dependensi:**
